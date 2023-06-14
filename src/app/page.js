@@ -14,7 +14,7 @@ function page() {
       <h1>basic page routing </h1>
       <Link href={"./login"}>Go to Login Page</Link>
       <br />
-      <Link href={"./about"}>Go to Login Page</Link>
+      <Link href={"./about"}>Go to about Page</Link>
       <br />
       <br />
       {/* <button onClick={() => { router.push("./login");}}> Go to login page</button> */}
