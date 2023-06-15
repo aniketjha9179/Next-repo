@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 function page() {
   return (
-    <div>
+    <div className="heading">
       
       page for login for student screen
       <h3>
