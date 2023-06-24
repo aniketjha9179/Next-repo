@@ -9,18 +9,10 @@ const  about = ()=> {
   return (
     <div>
         <h1>
-            hello about page 
+            hello about page  from nested routing
             {/* <Link href="/">go to home</Link> */}
             <br />
             <button onClick={() => { router.push("/");}}> Go to Home page</button>
-            <br />
-            <br />
-
-            <button onClick={()=>{router.push('/about/aboutstudent')}} >to to about stduent</button>
-            <br />
-            <button onClick={()=>{router.push('/about/abouteacher')}} >Go to about teacher</button>
-
-
 
         </h1>
     </div>
