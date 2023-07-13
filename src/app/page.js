@@ -1,32 +1,20 @@
-"use client";
+import { API_BASE_URL } from "@/config/constant";
 import React from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 
-function page() {
-  const router = useRouter();
-  const navigate =(name)=>{
-    router.push(name)
-  }
+const page = () => {
+  console.log(process.env.NODE_ENV);
 
   return (
     <div>
-      <h1>basic page routing </h1>
-      <Link href={"./login"}>Go to Login Page</Link>
-      <br />
-      <Link href={"./about"}>Go to about Page</Link>
-      <br />
-      <br />
-      {/* <button onClick={() => { router.push("./login");}}> Go to login page</button> */}
-      <button onClick={() => { navigate("./login");}}> Go to login page</button>
-      <br />
-      <br />
-
-      <button onClick={() => { navigate("./about");}}> Go to  About</button>
-
-        
+      enviroment variable in next js
+      {process.env.NODE_ENV === "developement" ? 
+        <h1>you are on development moode</h1>
+       : 
+        <h1>you are on production mode</h1>
+      }
+      {API_BASE_URL}
     </div>
   );
-}
+};
 
 export default page;
