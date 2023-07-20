@@ -13,3 +13,18 @@ export function GET(request, content) {
     { status: 200 }
   );
 }
+
+export async function PUT(request, content) {
+  let payload = await request.json();
+  payload.id = content.params.id;
+  console.log(payload);
+
+  if(!payload.id ||!payload.name||!payload.email){
+
+  return NextResponse.json({ result: "data is not valid", success: false }, { status: 400 });
+
+
+  }
+
+  return NextResponse.json({ result: payload, success: true }, { status: 200 });
+}
