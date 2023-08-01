@@ -1,23 +1,24 @@
-.input-filed{
-    display: block;
-    margin: 10px;
+
+.wrapper{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+.input{
     height: 30px;
-    width: 300px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 90px;
 
 }
 .btn{
-    background-color: skyblue;
-    columns: white;
-    border: 0;
-    width: 300px;
-    margin: 10px;
+    margin-left: 42%;
     padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+    width: 200px;
+    background-color: blueviolet;
+    border-radius: 10px;
 
-}
-
-.add-user{
-    margin-top: 100px;
-    text-align: -webkit-center;
 }
